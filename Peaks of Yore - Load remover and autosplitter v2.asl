@@ -2,8 +2,8 @@ state("Peaks of Yore") {}
 
 startup
 {
-    settings.Add("stamp_any%", true, "Stamp Any%");
-    settings.SetToolTip("stamp_any%", "Check this if you run Stamp Any%");
+    settings.Add("stamp%", true, "Stamp%");
+    settings.SetToolTip("stamp%", "Check this if you run Stamp%");
 
     Assembly.Load(File.ReadAllBytes("Components/asl-help")).CreateInstance("Unity");
     vars.Helper.LoadSceneManager = true;
@@ -90,7 +90,7 @@ start
 
 split
 {
-    if (settings["stamp_any%"]){
+    if (settings["stamp%"]){
         if (current.Split != old.Split){
         return current.Split;}
      } else 
