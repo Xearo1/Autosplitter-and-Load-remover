@@ -55,6 +55,31 @@ startup
         { "Category4_2_SolemnTempest",   "Solemn Tempest" },
         { "GameEnding_BaseGame",         "Normal Ending" },
         { "GameEnding_TrueEnding",       "True Ending" },
+	{ "Alps_1_TrainingTower",        "Tutor's Tower" },
+	{ "Alps_2_BalancingBoulder",     "Stougr Boulder" },
+	{ "Alps_3_SeaArch",              "Mara's Arch" },
+	{ "Alps_4_SunfullSpire",         "Grainne Spire" },
+	{ "Alps_5_Tree",                 "Great Bók Tree" },
+	{ "Alps_6_Treppenwald",          "Treppenwald" },
+	{ "Alps_7_Castle",               "Castle of the Swan King" },
+	{ "Alps_8_SeaSideTraining",      "Seaside Tribune" },
+	{ "Alps_9_IvoryGranites",        "Ivory Granites" },
+	{ "Alps_10_Rekkja",              "Old Rekkja" },
+	{ "Alps_11_Quietude",            "Quietude" },
+	{ "Alps_12_Overlook",            "Eljun's Folly" },
+	{ "Alps2_1_Waterfall",           "Einvald Falls" },
+	{ "Alps2_2_Dam",                 "Almáttr Dam" },
+	{ "Alps2_3_Dunderhorn",          "Dunderhorn" },
+	{ "Alps2_4_ElfenbenSpires",      "Mhòr Druim" },
+	{ "Alps2_5_WelkinPass",          "Welkin Pass" },
+	{ "Alps3_1_SeigrCraeg",          "Seigr Craeg" },
+	{ "Alps3_2_UllrsGate",           "Ullr's Chasm" },
+	{ "Alps3_3_GreatSilf",           "Great Silf" },
+	{ "Alps3_4_ToweringVisir",       "Towering Vísir" },
+	{ "Alps3_5_EldrisWall",          "Eldris Wall" },
+	{ "Alps3_6_MountMhorgorm",       "Mount Mhòrgorm" },
+	{ "Alps_Main",                   "Alp's Cabin" },
+
     };
 
     vars.Helper.Settings.Create(_settings, defaultValue: true);
@@ -88,7 +113,8 @@ start
     return old.Scene != current.Scene 
         && current.Scene != "TitleScreen"
         && current.Scene != "Cabin"
-        && current.Scene != "Category4_1_Cabin";
+        && current.Scene != "Category4_1_Cabin"
+        && current.Scene != "Alps_Main";
 }
 
 split
@@ -100,6 +126,7 @@ split
         return old.Scene != current.Scene
             && old.Scene != "Cabin"
             && old.Scene != "Category4_1_Cabin"
+            && old.Scene != "Alps_Main";
             && settings[old.Scene];
 }
 
