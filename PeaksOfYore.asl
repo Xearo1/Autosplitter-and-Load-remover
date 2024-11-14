@@ -78,7 +78,7 @@ startup
 	{ "Alps3_4_ToweringVisir",       "Towering Vísir" },
 	{ "Alps3_5_EldrisWall",          "Eldris Wall" },
 	{ "Alps3_6_MountMhorgorm",       "Mount Mhòrgorm" },
-	{ "Alps_Main",                   "Alp's Cabin" },
+	{ "Alps_Main",                   "Alp Cabin" },
 
     };
 
