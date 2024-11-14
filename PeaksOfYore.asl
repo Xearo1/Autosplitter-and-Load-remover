@@ -126,7 +126,7 @@ split
         return old.Scene != current.Scene
             && old.Scene != "Cabin"
             && old.Scene != "Category4_1_Cabin"
-            && old.Scene != "Alps_Main";
+            && old.Scene != "Alps_Main"
             && settings[old.Scene];
 }
 
