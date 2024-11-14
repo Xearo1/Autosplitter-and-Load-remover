@@ -79,7 +79,6 @@ startup
         { "Alps3_5_EldrisWall",          "Eldris Wall" },
         { "Alps3_6_MountMhorgorm",       "Mount Mhòrgorm" },
         { "Alps_Main",                   "Alp Cabin" },
-
     };
 
     vars.Helper.Settings.Create(_settings, defaultValue: true);
