@@ -113,15 +113,11 @@ start
 
 split
 {
-    if (settings["stamp%"]){
-        if (current.Split != old.Split){
-        return current.Split;}
-     } else 
-        return old.Scene != current.Scene
-            && old.Scene != "Cabin"
-            && old.Scene != "Category4_1_Cabin"
-            && old.Scene != "Alps_Main"
-            && settings[old.Scene];
+    return old.Scene != current.Scene
+        && old.Scene != "Cabin"
+        && old.Scene != "Category4_1_Cabin"
+        && old.Scene != "Alps_Main"
+        && settings[old.Scene];
 }
 
 reset
