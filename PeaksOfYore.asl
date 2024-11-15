@@ -93,8 +93,6 @@ init
       vars.Helper["Split"] = mono.Make<bool>("StamperPeakSummit", "currentlyStampingPeakJournal");
       return true;
     });
-      
-
 }
 
 update
