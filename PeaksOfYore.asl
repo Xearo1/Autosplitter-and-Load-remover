@@ -5,9 +5,6 @@ state("Peaks of Yore") {}
 
 startup
 {
-    settings.Add("stamp%", true, "Stamp%");
-    settings.SetToolTip("stamp%", "Check this if you run Stamp%");
-
     Assembly.Load(File.ReadAllBytes("Components/asl-help")).CreateInstance("Unity");
     vars.Helper.LoadSceneManager = true;
 
